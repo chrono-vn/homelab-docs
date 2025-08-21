@@ -19,24 +19,26 @@ This is my personal homelab, built on a my first gaming PC. It serves as my prim
 
 ## 🌐 Network Overview
 
-Not currently available, nuking and rebuilding the server
-
-
-
 *   **Hostname:** `void`
 *   **Local IP:** `192.168.3.133`
-*   **Access:** Primarily via SSH.
+*   **Access:** Primarily via SSH. Remote Access available on VPN.
 
 ## 🐳 Deployed Services
 
 Here are the core services currently running on the lab via Docker Compose:
 
-| Service | Description | Status | Web Interface |
-| :--- | :--- | :---: | :--- |
-| **Portainer** | Container Management Platform. | ✅ Live | `http://192.168.3.133:9000` |
-| **NGINX Proxy Manager** | Proxy Hosts, SSL and Exposing Services | ✅ Live | `http://192.168.3.133:81` |
-| **Heimdall** | Dashboard for Web Services | ✅ Live | `http://192.168.3.133:8080` |
-| **Wireguard** | VPN for Remote Access | ✅ Live | `http://192.168.3.133:51820` |
+| No. | Service | Description | Status | Web Interface |
+| :--- | :--- | :--- | :---: | :--- |
+| 1. | **Portainer** | Container Management Platform. | ✅ Live | `http://192.168.3.133:9000` |
+| 2. | **NGINX Proxy Manager** | Proxy Hosts, SSL and Exposing Services | ✅ Live | `http://192.168.3.133:81` |
+| 3. |**Heimdall** | Dashboard for Web Services | ✅ Live | `http://192.168.3.133:8080` |
+| 4. |**Wireguard** | VPN for Remote Access | ✅ Live | `http://192.168.3.133:51820` |
+| 5. |**Jellyfin** | Media System | ✅ Live | `http://192.168.3.133:8096` |
+| 6. |**qBittorrent** | Torrent Manager | ✅ Live | `http://192.168.3.133:8081` |
+| 7. |**Radarr** | Movie Manager | ✅ Live | `http://192.168.3.133:7878` |
+| 8. |**Sonarr** | TV Show Manager | ✅ Live | `http://192.168.3.133:8989` |
+| 9. |**Prowlarr** | Indexer Manager | ✅ Live | `http://192.168.3.133:9696` |
+| 10. |**FlareSolverr** | CloudFlare Bypass (For certain Indexers) | ✅ Live | `http://192.168.3.133:0000` |
 
 ## 📁 Repository Structure
 
@@ -47,10 +49,13 @@ homelab-docs/
 
 ## 🚧 Current Projects & Goals
 
--   [ ] **Media Server** Get Jellyfin, qBittorrent, outgoing VPN and *arr stack up and running again.
+-   [ ] **Outgoing VPN** - Get qBittorrent working through a VPN
+-   [ ] **Media Performance** - Enable transcoding on Jellyfin
+-   [ ] **Re-install Scripts** - Pull in old management scripts from Github, and maybe add a few more
 
 ## 📝 Notes & Log
 
+-   **2025-08-21:** Got the media stack up and running again.
 -   **2025-08-20:** Fresh Install of Ubuntu Server, starting with management tools this time.
 -   **2025-08-20:** Nuked the homeserver to start from scratch.
 -   **2025-08-19:** Initialized this documentation.
